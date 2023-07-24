@@ -2,7 +2,7 @@
 const express = require("express");
 const app = express();
 
-app.post("/", (req, res) => {
+app.get("/", (req, res) => {
   // const username = req.query.username || "myogeshchavan97";
   try {
     res.status(200).send("Hello World,First Deployment");
