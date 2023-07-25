@@ -2,6 +2,7 @@
 const express = require("express");
 const app = express();
 const router1 = require("./routes/route1")
+const cors = require("cors")
 
 // app.get("/", (req, res) => {
 //   // const username = req.query.username || "myogeshchavan97";
@@ -14,6 +15,7 @@ const router1 = require("./routes/route1")
 
 // middlewares
 app.use("/", router1)
+app.use(cors())
 
 // creating server PORT
 let PORT = process.env.PORT || 5000;
