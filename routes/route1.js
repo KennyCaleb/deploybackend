@@ -9,7 +9,7 @@ router.get("/", (req, res)=>{
 router.post("/add", (req, res)=>{
     const user = req.body
 
-    return res.status(200).send(user)
+    return res.status(200).json({msg:"user added", user})
 })
 
 module.exports = router
