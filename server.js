@@ -2,7 +2,7 @@
 const express = require("express");
 const app = express();
 const router1 = require("./routes/route1")
-const cors = require("cors")
+const cors = require("cors");
 
 // app.get("/", (req, res) => {
 //   // const username = req.query.username || "myogeshchavan97";
