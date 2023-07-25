@@ -2,7 +2,7 @@ const express = require("express")
 const router = express.Router()
 
 router.get("/", (req, res)=>{
-    res.status(200).send("Router in operation.")
+    res.status(200).send("Router in operation, again.")
     res.status(200).json({msg:"JSON Format."})
 })
 
